@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROBERT MAINA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#home"><b>RM</b><span>Robert Maina</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <canvas id="stage" aria-hidden="true"></canvas>
+    <div class="wrap" style="width:100%">
+      <div class="hero-copy">
+        <span class="eyebrow">Diploma in Software Engineering &middot; ZETECH University</span>
+        <h1>Robert <span>Maina</span></h1>
+        <p class="role">I <span id="role">build responsive websites</span><span class="caret" aria-hidden="true"></span></p>
+        <p class="lead">Second-year software engineering student who enjoys building websites and solving problems with code. Looking for an internship where I can apply what I have learned and contribute to a real team.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">View my projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <span class="eyebrow">About</span>
+      <h2>Building things that work, one project at a time</h2>
+      <div class="about">
+        <div class="coin-scene rv" aria-hidden="true">
+          <div class="coin"><div class="front">RM</div><div class="back">{ }</div></div>
+        </div>
+        <div class="rv">
+          <p>I am a motivated second-year student who enjoys building websites and solving problems with code. I am looking for an internship where I can apply what I have learned, grow my skills and contribute to a real team.</p>
+          <dl class="facts">
+            <dt>Name</dt><dd>Robert Maina</dd>
+            <dt>Course</dt><dd>Diploma in Software Engineering</dd>
+            <dt>Institution</dt><dd>ZETECH University</dd>
+            <dt>Looking for</dt><dd>Building a long term career in software development</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="wrap">
+      <span class="eyebrow">Skills</span>
+      <h2>What I work with</h2>
+      <div class="skills">
+        <div class="rv">
+          <div class="cube-scene" id="cubeScene" aria-hidden="true">
+            <div class="cube" id="cube">
+              <div class="face">HTML</div><div class="face">CSS</div><div class="face">PYTHON</div>
+              <div class="face">SQL</div><div class="face">LOGIC</div><div class="face">DEBUG</div>
+            </div>
+          </div>
+          <p class="cube-hint">DRAG THE CUBE</p>
+        </div>
+        <ul class="tiles rv">
+          <li><h3>HTML</h3><p>Page structure for the Campus Events Website.</p></li>
+          <li><h3>CSS</h3><p>Responsive layouts and hover effects on the events site.</p></li>
+          <li><h3>Python</h3><p>Application logic for the Student Records System.</p></li>
+          <li><h3>Database Management</h3><p>Tables for students, courses and grades in MySQL, and SQLite for the planned tracker.</p></li>
+          <li><h3>Problem Solving</h3><p>Breaking a brief into data, pages and steps that work.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="wrap">
+      <span class="eyebrow">Projects</span>
+      <h2>Things I have built and what is next</h2>
+      <div class="cards">
+        <div class="rv">
+          <article class="card">
+            <div class="shot" aria-hidden="true"><div class="v-table"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="card-body">
+              <span class="pill">Project</span>
+              <h3>ROAD MARKING SYSTEM</h3>
+              <p>A small database application for storing and searching road marking details, with tables for markings, locations and maintenance records.</p>
+              <ul class="chips"><li>Python</li><li>MySQL</li></ul>
+            </div>
+          </article>
+        </div>
+        <div class="rv">
+          <article class="card">
+            <div class="shot" aria-hidden="true"><div class="v-events"><i></i><i></i><i></i></div></div>
+            <div class="card-body">
+              <span class="pill">Project</span>
+              <h3>E-COMMERCE WEBSITE</h3>
+              <p>A responsive website for buying and selling products online.</p>
+              <ul class="chips"><li>HTML</li><li>CSS</li></ul>
+            </div>
+          </article>
+        </div>
+        <div class="rv">
+          <article class="card">
+            <div class="shot" aria-hidden="true"><div class="v-bars"><i style="--h:45%"></i><i style="--h:70%"></i><i style="--h:55%"></i><i style="--h:88%"></i><i style="--h:62%"></i></div></div>
+            <div class="card-body">
+              <span class="pill planned">Planned</span>
+              <h3>Budget Tracker</h3>
+              <p>A tool to help students record daily expenses and view monthly spending summaries.</p>
+              <ul class="chips"><li>Python</li><li>SQLite</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h2>Let us talk about an internship</h2>
+      <div class="contact">
+        <div class="reach rv">
+          <div class="reach-row">
+            <div><small>Email</small><span id="emailText">robert.maina@example.com</span></div>
+            <button class="copy" type="button" data-target="emailText">Copy</button>
+          </div>
+          <div class="reach-row">
+            <div><small>Phone</small><span id="phoneText">+254 798016411</span></div>
+            <button class="copy" type="button" data-target="phoneText">Copy</button>
+          </div>
+        </div>
+        <form id="contactForm" class="rv" novalidate>
+          <label for="name">NAME</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <label for="message">MESSAGE</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; 2026 ROBERT MAINA. All rights reserved.</footer>
+
+  <!-- three.js powers the 3D hero -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
